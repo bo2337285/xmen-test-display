@@ -1,0 +1,2 @@
+webpackJsonp([4],{"1Cd8":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a={name:"Rules",data:function(){return{}},components:{MainRight:t("4had").a}},s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"main clear"},[this._v("\n    往期\n")])},staticRenderFns:[]},r=t("VU/8")(a,s,!1,null,null,null);n.default=r.exports}});
+//# sourceMappingURL=4.f3cdceb38d21853d8d8d.js.map
