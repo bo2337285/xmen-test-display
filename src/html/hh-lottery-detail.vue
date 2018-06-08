@@ -1,5 +1,5 @@
 <template>
-    <div class="main lottery-detail-wrapper clear">
+    <div class="main container-small clear">
         <div class="notice-detail-title">
             亚洲福利彩票“
             <span class="font-orange">{{$route.query.title}}</span>”彩票介绍

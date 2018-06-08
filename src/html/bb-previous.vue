@@ -1,5 +1,5 @@
 <template>
-    <div class="main clear">
+    <div class="container clear">
         <div class="query-form clear">
             <div class="query-form-item fl">
                 <span class="query-form-label active">最近30期</span>
@@ -23,7 +23,7 @@
                 </button>
             </div>
         </div>
-        <table class="display-table">
+        <table class="display-table" style="margin-top:16px;">
             <tr>
                 <th colspan="2"></th>
                 <th colspan="2">开奖号码</th>
@@ -49,7 +49,7 @@
                 <th>详情</th>
             </tr>
             <tr v-for="(item,idx) in lotteryList" :key="idx">
-                <td>{{item.number}}</td>
+                <td style="font-weight:bold">{{item.number}}</td>
                 <td>{{item.date}}</td>
                 <td>
                     <!-- {{item.redNumber}} -->
@@ -71,8 +71,8 @@
                 <td>{{item.money}}</td>
                 <td>{{item.Jackpot}}</td>
                 <td>
-                    <router-link tag="a" target="_blank" :to="{path:'/bb/notice-detail'}">
-                        <span class="font-blue">详情</span>
+                    <router-link tag="a" target="_blank" :to="{path:'/bb/notice-detail',query:{title:item.date}}">
+                        <span class="font-blue font-underline">详情</span>
                     </router-link>
                 </td>
             </tr>

@@ -42,24 +42,13 @@
                     <li class="nav-item active">
                         <span class="spot"></span>
                         <!-- <a href="javascript:void(0);" data-lang="2">产品</a> -->
-                        <span>
-                            <router-link to="/bb">两色球</router-link>
-                        </span>
-                        <span class="spot"></span>
-                        <span class="arc"></span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="spot"></span>
-                        <span>
-                            <router-link to="/sb">时时彩</router-link>
-                        </span>
-                        <span class="spot"></span>
-                        <span class="arc"></span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="spot"></span>
-                        <span>
-                            <router-link to="/hh">Hengheng</router-link>
+                        <span class="products-nav">
+                            彩种玩法
+                            <div class="products-nav-inner">
+                                <router-link class="products-nav-item" to="/bb"> 两色球</router-link>
+                                <router-link class="products-nav-item" to="/sb">时时彩 </router-link>
+                                <router-link class="products-nav-item" to="/hh">Hengheng</router-link>
+                            </div>
                         </span>
                         <span class="spot"></span>
                         <span class="arc"></span>
@@ -221,7 +210,7 @@ export default {
                     { label: '游戏规则', url: '/sb/rules' },
                     { label: '市场动态', url: '/sb/dynamics' },
                 ]
-            } else{
+            } else {
                 return [
                     { label: '最新资讯', url: '/hh/news' },
                     { label: '在线试玩', url: '/hh/try' },
@@ -229,13 +218,13 @@ export default {
                 ]
             }
         },
-        isShowBannerBB(){
+        isShowBannerBB() {
             return this.$route.path.indexOf("/bb/") !== -1 && this.$route.path !== '/bb/news'
         },
-        isShowBannerSB(){
+        isShowBannerSB() {
             return this.$route.path.indexOf("/sb/") !== -1 && this.$route.path !== '/sb/news'
         },
-        isShowBannerHH(){
+        isShowBannerHH() {
             return this.$route.path.indexOf("/hh/") !== -1 && this.$route.path !== '/hh/news'
         }
     }

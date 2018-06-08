@@ -1,8 +1,14 @@
 <template>
     <div class="video">
-        <div class="video-detail-title">视频标题</div>
+        <div class="video-detail-title">亚洲福利彩票两色球xxxxx开奖视频</div>
         <div class="video-detail-content">
             <video class="video-player" src=""></video>
+        </div>
+        <div class="container">
+            <div class="video-detail-info">
+                <h3 class="title">视频信息</h3>
+                <div class="content">视频信息视频信息视频信息视频信息视频信息视频信息</div>
+            </div>
         </div>
         <div class="container">
             <div class="video-detail-list-lbtn"></div>
@@ -10,10 +16,10 @@
             <div class="video-detail-list">
                 <div v-for="(item,idx) in vedioList" :key="idx" class="video-detail-item">
                     <div class="video-thumbnail">
-                        <router-link  tag="a" target="_blank" :to="{path:'/bb/video-detail'}">
+                        <router-link tag="a" target="_blank" :to="{path:'/bb/video-detail'}">
                             <div class="video-thumbnail-btn"></div>
                             <div class="video-thumbnail-cover"></div>
-                            <img class="video-thumbnail-img" width="100%" :src="item.img" />
+                            <img class="video-thumbnail-img video-detail-thumbnail-img" width="100%" :src="item.img" />
                         </router-link>
                     </div>
                     <div class="video-title">

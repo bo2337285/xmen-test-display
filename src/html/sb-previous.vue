@@ -24,7 +24,7 @@
                     号码统计
                 </div>
                 <div class="content">
-                    <h3 class="pre-point-orange">
+                    <h3 class="sub-title pre-point-orange">
                         同号玩法统计
                     </h3>
                     <div>五同次数： 1 次</div>
@@ -34,7 +34,7 @@
             </div>
             <div class="main-statistics-wrapper bg-white top-border-orange">
                 <div class="content">
-                    <h3 class="pre-point-orange">
+                    <h3 class="sub-title pre-point-orange">
                         开奖号码出现次数
                     </h3>
                     <div v-for="(item,idx) in statisticsList" :key="idx">

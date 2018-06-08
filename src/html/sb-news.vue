@@ -9,7 +9,7 @@
             <MainRight/>
             <div class="main-left-area">
                 <div class="curr-lottery">
-                    <img class="logo-lottery" src="../img/sb-logo.png" alt="logo" />
+                    <img class="logo-lottery" src="../img/sb-logo-large.png" alt="logo" />
                     <div class="lottery-detail-info">
                         <div style="border-bottom: 1px dotted #dcdcdc;">
                             <router-link tag="a" target="_blank" :to="{path:'/sb/video'}">

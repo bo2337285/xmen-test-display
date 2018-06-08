@@ -1,5 +1,5 @@
 <template>
-    <div class="main clear">
+    <div class="container-small clear">
         <div class="notice-detail-title">
             亚洲福利彩票两色球<span class="font-orange">{{$route.query.title}}</span>开奖公告
 

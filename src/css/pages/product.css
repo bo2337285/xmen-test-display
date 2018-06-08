@@ -1,3 +1,27 @@
+.products-nav{
+    position: relative;
+}
+.products-nav-inner{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    top: 25px;
+    left: -15px;
+    z-index: 10;
+    border: 1px solid #ff532a;
+}
+.products-nav-item{
+    padding: 8px;
+    display: block;
+}
+.products-nav-item:hover{
+    background-color: #dcdcdc;
+}
+.products-nav:hover .products-nav-inner,
+.products-nav-inner:hover{
+    display: block;
+}
+
 .swiper-container {
     width: 100%;
 }
@@ -34,7 +58,7 @@
 }
 
 .main {
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .main .main-top {
@@ -242,11 +266,12 @@
 
 .banner-small {
     background-color: #eeeeee;
-    line-height: 100px;
+    line-height: 105px;
+    height: 105px;
 }
 
 .banner-small .title {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     vertical-align: middle;
     margin: 0 8px;
@@ -330,15 +355,17 @@
 .display-table th {
     background-color: #dcdcdc;
     border-color: #fff;
+    font-size: 16px;
 }
 
 .display-table td {
     background-color: #fff;
+    font-size: 14px;
 }
 
 .circle-wrapper {
     line-height: 22px;
-    width: 120px;
+    width: 124px;
     display: inline-block;
     vertical-align: middle;
     margin: 4px 0;
@@ -406,6 +433,20 @@
     float: left;
     color: #1a1a1a;
     font-size: 16px;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+    padding-right: 16px;
+}
+.article-list-title:before{
+    content: ".";
+    font-size: 24px;
+    display: inline-block;
+    width: 10px;
+    color: #bebebe;
+    float: left;
+    top: -7px;
+    position: relative;
 }
 
 .article-list-title:hover>a {
@@ -417,11 +458,23 @@
     float: right;
     color: #999999;
     font-size: 14px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding-left: 16px;
+}
+.article-list-section::before{
+    content: "";
+    display: block;
+    border: 1px dotted #dfe2ea;
+    position: relative;
+    bottom: -20px;
+    z-index: 1;
 }
 
 .article-list-section {
-    line-height: 32px;
-    height: 32px;
+    line-height: 40px;
+    height: 40px;
 }
 
 .article-list {
@@ -508,6 +561,9 @@
 
 .video-thumbnail-img {
     display: inline-block;
+    height: 200px;
+}
+.video-detail-thumbnail-img{
     height: 120px;
 }
 
@@ -516,6 +572,7 @@
     margin-top: 32px;
     text-align: center;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .video-detail-content {
@@ -537,7 +594,7 @@
 }
 
 .video-detail-list {
-    margin: 48px;
+    margin-bottom: 48px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -545,16 +602,17 @@
 .video-detail-item {
     display: inline-block;
     width: 160px;
-    height: 90px;
     margin-right: 16px;
 }
 
 .video-detail-list-lbtn {
     float: left;
+    margin-right: 16px;
 }
 
 .video-detail-list-rbtn {
     float: right;
+    margin-left: 16px;
 }
 
 .video-detail-list-lbtn,
@@ -604,7 +662,7 @@
 .video-detail-info {
     padding: 8px 0;
     line-height: 24px;
-    min-height: 140px;
+    min-height: 100px;
 }
 
 .video-detail-info .title {
@@ -623,15 +681,18 @@
 }
 
 .logo-lottery {
-    float: left;
-    margin-right: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .curr-lottery {
     margin-top: 16px;
     font-size: 14px;
     background-color: #fff;
-    padding: 16px;
+    padding: 20px 36px;
+    position: relative;
 }
 
 .lottery-detail-btn {
@@ -644,9 +705,13 @@
     vertical-align: middle;
     cursor: pointer;
 }
-
+.curr-lottery>img{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
 .lottery-detail-info {
-    margin-left: 88px;
+    margin-left: 200px;
 }
 
 .lottery-detail-info>div {
@@ -676,7 +741,8 @@
 
 .main-left-area .title {
     color: #1a1a1a;
-    font-weight: bold;
+    font-size: 16px;
+    /* font-weight: bold; */
 }
 
 .curr-rewards-detail,
@@ -702,7 +768,9 @@
 }
 
 .notice-detail-title {
-    font-size: 32px;
+    font-size: 22px;
+    height: 60px;
+    line-height: 60px;
     font-weight: bold;
     text-align: center;
 }
@@ -730,11 +798,11 @@
     border-top: 3px solid #f6641d;
     background-color: #fff;
     line-height: 70px;
-    padding: 0 16px;
+    padding: 0 69px;
 }
 
 .query-form-label {
-    margin-right: 8px;
+    margin-right: 20px;
     cursor: pointer;
     color: #2380cf;
 }
@@ -751,8 +819,8 @@
 }
 
 .query-form-tab.active {
-    border: 1px solid #f6641d;
-    background-color: #f6641d;
+    border: 1px solid #ff3800;
+    background-color: #ff3800;
     color: #fff;
 }
 
@@ -789,7 +857,7 @@ input[type=text] {
 
 .main .title {
     line-height: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .top-border-orange {
@@ -799,11 +867,16 @@ input[type=text] {
 .main-statistics-wrapper {
     margin-top: 10px;
 }
+.main-statistics-wrapper .sub-title{
+    font-size: 16px;
+    color: #777777;
+}
 
 .main-statistics-wrapper .title {
     padding: 8px 16px;
     background-color: #dcdcdc;
     border: none;
+    font-size: 16px;
 }
 
 .main-statistics-wrapper .content {
@@ -887,15 +960,18 @@ input[type=text] {
 }
 .lottery-title{
     padding: 8px 0;
-    font-weight: bold;
+    font-size: 16px;
 }
 .lottery-content>p{
     white-space: normal;
     word-break: break-all;
 }
+.lottery-content-info{
+    font-size: 14px;
+}
 
 /* 票面 */
-.lottery-detail-wrapper{
+.container-small{
     margin: 0 auto;
     width: 900px;
 }
@@ -949,6 +1025,7 @@ input[type=text] {
 .try-detail-info{
     background: #fff;
     padding: 32px;
+    margin-bottom: 80px;
 }
 .try-detail-thumbnail{
     position: relative;
@@ -964,10 +1041,10 @@ input[type=text] {
 }
 .try-detail-play{
     background-color: #eeeeee;
-    padding: 16px;
+    padding: 20px 46px;
     color: #666;
-    line-height: 24px;
-    margin-top: 32px;
+    line-height: 35px;
+    margin-top: 30px;
     font-size: 14px;
 }
 .try-detail-title{
@@ -977,16 +1054,22 @@ input[type=text] {
     margin: 16px 0;
 }
 .try-detail-play-btn{
-    border-radius: 24px;
-    line-height: 24px;
+    border-radius: 35px;
+    line-height: 35px;
     cursor: pointer;
     color: #fff;
     background-color: #f6641d;
     border: 1px solid #f6641d;
     padding: 0 16px;
-    width: 100px;
+    width: 108px;
 }
 .try-detail-play-btn.reversed{
     color: #f6641d;
     background-color: #fff;
+}
+.font-underline{
+    text-decoration: underline;
+}
+.try-detail-play-value{
+    font-size: 16px;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="main lottery-detail-wrapper clear">
+    <div class="main container-small clear">
         <h3 class="try-detail-title">{{$route.query.title}}</h3>
         <div class="try-detail-info">
             <div class="try-detail-thumbnail">
@@ -9,9 +9,9 @@
             <div class="try-detail-play clear">
                 <div class="fl">
                     <p>投入彩金
-                        <span class="font-orange">1,000</span>瑞尔</p>
+                        <span class="try-detail-play-value font-orange font-underline">1,000</span>瑞尔</p>
                     <p>获得奖金
-                        <span class="font-orange">5,000</span>瑞尔</p>
+                        <span class="try-detail-play-value font-orange font-underline">5,000</span>瑞尔</p>
                     <p>
                         <select name="" id="">
                             <option value="1">来张别的</option>

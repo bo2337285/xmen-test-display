@@ -23,14 +23,16 @@
                             {{item.title}}
                         </h3>
                         <div class="lottery-content">
-                            面值:
-                            <span class="font-orange">
-                                {{item.value}}
-                            </span>
-                            最高奖金:
-                            <span class="font-orange">
-                                {{item.highest}}
-                            </span>
+                            <p class="lottery-content-info">
+                                面值:
+                                <span class="font-orange">
+                                    {{item.value}}
+                                </span>
+                                最高奖金:
+                                <span class="font-orange">
+                                    {{item.highest}}
+                                </span>
+                            </p>
                             <p>{{item.comment}}</p>
                         </div>
                     </router-link>
@@ -47,14 +49,16 @@
                             {{item.title}}
                         </h3>
                         <div class="lottery-content">
-                            面值:
-                            <span class="font-orange">
-                                {{item.value}}
-                            </span>
-                            最高奖金:
-                            <span class="font-orange">
-                                {{item.highest}}
-                            </span>
+                            <p class="lottery-content-info">
+                                面值:
+                                <span class="font-orange">
+                                    {{item.value}}
+                                </span>
+                                最高奖金:
+                                <span class="font-orange">
+                                    {{item.highest}}
+                                </span>
+                            </p>
                             <p>{{item.comment}}</p>
                         </div>
                     </router-link>
